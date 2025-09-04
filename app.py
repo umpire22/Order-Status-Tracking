@@ -29,7 +29,8 @@ if order_id:
     )
 
 # --- STYLING ---
-st.markdown("""
+st.markdown(
+    """
     <style>
     body {
         background-color: #1e1e1e;
@@ -39,7 +40,15 @@ st.markdown("""
         background-color: #4CAF50;
         color: white;
         font-weight: bold;
+        border-radius: 8px;
+        padding: 0.5em 1em;
     }
-    .stTextInput {
-        background-color: #333;
-        color: white;
+    .stTextInput>div>div>input {
+        background-color: #333 !important;
+        color: white !important;
+        border-radius: 6px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
